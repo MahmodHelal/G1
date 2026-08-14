@@ -238,30 +238,24 @@ public class Session03 {
         Scanner input = new Scanner(System.in);
         String PASSWORD = "HELAL98";
         String USERNAME = "HELAL";
-
         int MAX_ATTEMPTS = 3;
         int attempt = 0;
         boolean loggedIn = false;
-
         while (attempt < MAX_ATTEMPTS){
             System.out.println("please enter username");
             String enteredUsername = input.nextLine();
             System.out.println("please enter password");
             String enteredPassword = input.nextLine();
-
             if (enteredUsername.equals(USERNAME) && PASSWORD.equals(enteredPassword)){
                 loggedIn = true;
                 break;
             }
             attempt++;
-
             if (attempt < MAX_ATTEMPTS){
-
                 System.out.println("Invalid Credentials");
                 System.out.println("Remaining attempts is : "+ (MAX_ATTEMPTS - attempt));
             }
         }
-
         if (loggedIn){
             System.out.println("login successful");
         }else {
@@ -270,7 +264,7 @@ public class Session03 {
 
 
 
-
+//
 
 
 
